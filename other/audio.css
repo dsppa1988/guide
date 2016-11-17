@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+body {
+	background-color: #ffffff;
+}
+
+HTML {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; FONT-FAMILY: "Microsoft YaHei" , Helvetica Neue, Tahoma, Arial; PADDING-TOP: 0px
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; FONT-FAMILY: "Microsoft YaHei" , Helvetica Neue, Tahoma, Arial; PADDING-TOP: 0px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+
+.main {
+	POSITION: relative; MIN-WIDTH: 320px; MARGIN: 0px auto; WIDTH: 100%; MAX-WIDTH: 640px
+}
+
+.welcome {
+	font-size: 20px; TEXT-ALIGN: center; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #09f; PADDING-TOP: 10px
+}
+.welcome SPAN {
+	DISPLAY: block; COLOR: #989898; PADDING-TOP: 2px
+}
+.welcome SPAN SMALL {
+	BORDER-BOTTOM: #e5e9ed 3px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: Helvetica; PADDING-TOP: 2px
+}
+/* Main */
+.mainContent{color: #666;padding: 15px;font-family: "Helvetica Neue",Helvetica,Arial;}
+.mainContent .content{font-size: 1.1rem;line-height: 150%;border-bottom: 2px solid #d9dde3;word-wrap: break-word;}
+.mainContent .content p{padding-bottom: 15px;word-wrap: break-word;}
+.mainContent .content img{width: 100%;height: auto;}
+
+
+.header {
+	BORDER-BOTTOM: #fff 1px solid; POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 50px; BACKGROUND: url(../images/bg_top.png) repeat-x; COLOR: #fff; z-index:9999
+}
+.header .back {
+	POSITION: absolute; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; BACKGROUND-COLOR: #3bafda; MARGIN-TOP: -13px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; HEIGHT: 26px; TOP: 50%; PADDING-TOP: 0px; LEFT: 10px; box-shadow: 2px 2px 2px #31a2d3 inset; border-radius: 5px
+}
+
+.media {
+	POSITION: relative; BACKGROUND: url(../images/media_bg.jpg) no-repeat; HEIGHT: 255px; OVERFLOW: hidden; background-size: 100% 100%; -webkit-background-size: 100% 100%
+}
+.media .m-bg {
+	POSITION: absolute; WIDTH: 100%; HEIGHT: 100%; TOP: 0px; LEFT: 0px
+}
+.media .m-bg IMG {
+	FILTER: blur(2px); WIDTH: 100%; HEIGHT: 100%; opacity: 0.1; -webkit-filter: blur(5px)
+}
+.media .m-img {
+	POSITION: absolute; WIDTH: 120px; BACKGROUND-POSITION: center center; HEIGHT: 120px; MARGIN-LEFT: -60px; OVERFLOW: hidden; TOP: 46px; LEFT: 50%; background-size: 110% 110%; border-radius: 100px; -webkit-background-size: 110% 110%
+}
+.media .m-img SPAN {
+	WIDTH: 100%; DISPLAY: block; HEIGHT: 100%
+}
+.media .m-title {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 100%; BOTTOM: 18px; DISPLAY: none; COLOR: #fff
+}
+.media .m-title SPAN {
+	PADDING-BOTTOM: 2px; MARGIN: 0px 2px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 2px
+}
+.code {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 15px
+}
+.code IMG {
+	BORDER-BOTTOM: #d9dde3 2px dotted; BORDER-LEFT: #d9dde3 2px dotted; BORDER-TOP: #d9dde3 2px dotted; BORDER-RIGHT: #d9dde3 2px dotted; border-radius: 8px
+}
+
+/* 播放器 */
+.audiojs audio{position: absolute;left: -1px;}
+.audiojs{width:100%;height: 100%;font-family: monospace;font-size: 12px;position: relative;}
+.audiojs .scrubber{position: absolute;height: 10px;background-color:#f6f6f6;width: 100%;bottom: 0;border-top: 1px solid #fff;}
+.audiojs .progress{position: relative;top: 0;left: 0;height: 10px;width: 0;background: #00cc00;z-index: 1;box-shadow:0 0 3px #b8bec4 inset;}
+.audiojs .loaded{position: absolute;top: 0;left: 0;height: 10px;width: 0;background-color:#f6f6f6;box-shadow:0 1px 3px rgba(0,0,0,0.15) inset;}
+.audiojs .time{color:rgba(255,255,255,0.8);position: absolute;width: 100%;bottom: 25px;}
+.audiojs .time em{float: left;font-style: normal;padding-left: 10px;}
+.audiojs .time strong{float: right;font-weight: normal;padding-right: 10px;}
+.audiojs .error-message{float: left;display: none;margin: 0px 10px;height: 36px;width: 400px;overflow: hidden;line-height: 36px;white-space: nowrap;color: #fff;text-overflow: ellipsis;-o-text-overflow: ellipsis;-icab-text-overflow: ellipsis;-khtml-text-overflow: ellipsis;-moz-text-overflow: ellipsis;-webkit-text-overflow: ellipsis;}
+.audiojs .error-message a{color: #eee;text-decoration: none;padding-bottom: 1px;border-bottom: 1px solid #999;white-space: wrap;}
+.audiojs .play-pause,.audiojs p{width: 38px;height: 38px;}
+.audiojs .play-pause{overflow: hidden;position: absolute;left: 50%;top: 95px;margin-left: -18px;}
+.audiojs p{display: none;margin: 0px;cursor: pointer;background: url(../images/img.png) no-repeat;background-size: 38px auto;}
+.audiojs .play{display: block;}
+.audiojs .play{background-position: 0 -76px;}
+.audiojs .loading{background: url(player-graphics.gif) -2px -31px no-repeat;}
+.audiojs .error{background: url(player-graphics.gif) -2px -61px no-repeat;}
+.audiojs .pause{}
+.playing .play, .playing .loading, .playing .error{display: none;}
+.playing .pause{display: block;}
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading{display: none;}
+.error .error{display: block;}
+.error .play-pause p{cursor: auto;}
+.error .error-message{display: block;}
