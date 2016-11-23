@@ -34,7 +34,6 @@ IMG {
 .mainContent .content p{padding-bottom: 15px;word-wrap: break-word;}
 .mainContent .content img{width: 100%;height: auto;}
 
-
 .header {
 	BORDER-BOTTOM: #fff 1px solid; POSITION: relative; TEXT-ALIGN: center; LINE-HEIGHT: 50px; BACKGROUND: url(../images/bg_top.png) repeat-x; COLOR: #fff; z-index:9999
 }
