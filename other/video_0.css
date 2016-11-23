@@ -42,7 +42,14 @@ IMG {
 }
 /* Main */
 .mainContent{color: #333333;padding: 15px;font-family: "Helvetica Neue",Helvetica,Arial;}
-.mainContent .content{font-size: 1.1rem;line-height: 150%;border-bottom: 2px solid #d9dde3;word-wrap: break-word;}
+.mainContent .content{
+	font-size: 1.1rem;
+	line-height: 150%;
+	word-wrap: break-word;
+	border-bottom-width: 2px;
+	border-bottom-style: none;
+	border-bottom-color: #d9dde3;
+}
 .mainContent .content p{padding-bottom: 15px;word-wrap: break-word;}
 .mainContent .content img{width: 100%;height: auto;}
 
@@ -67,5 +74,6 @@ IMG {
 	PADDING-BOTTOM: 15px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; PADDING-TOP: 15px
 }
 .code IMG {
-	BORDER-BOTTOM: #d9dde3 2px dotted; BORDER-LEFT: #d9dde3 2px dotted; BORDER-TOP: #d9dde3 2px dotted; BORDER-RIGHT: #d9dde3 2px dotted; border-radius: 8px
+	border-radius: 8px;
+	border: 2px dotted #FFC559;
 }
