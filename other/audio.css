@@ -1,12 +1,7 @@
 @charset "utf-8";
 
 body {
-	font-size: 14px;
-	color: #272727;
-	background-image: url(../images/bg.jpg);
-	background-repeat: repeat;
-	line-height: 22px;
-	text-align: justify;
+	background-color: #ffffff;
 }
 
 HTML {
