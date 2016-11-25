@@ -49,7 +49,9 @@ function playCotrol() {
         function() { 
             totalTime = myAudio.duration;  
             if(!isNaN(totalTime)){
-		document.getElementById("totalTime").innerHTML = sToHms(totalTime);
+		if(totalTime > 0){
+			document.getElementById("totalTime").innerHTML = sToHms(totalTime);
+		}
 	}
         }, false);
 	myAudio.addEventListener("pause",
