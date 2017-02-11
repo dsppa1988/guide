@@ -139,6 +139,13 @@ wx.ready(function () {
     //media.src = "http://a.f265.com/project/shake-money/img/shake.mp3"
     myAudio.play();
 });
+
+if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
+    WeixinJSBridge.invoke('getNetworkType', {}, function (res) {
+        // 在这里拿到 e.err_msg, 这里面就包含了所有的网络类型
+        // alert(res.err_msg);
+        myAudio.play();
+    });
 		
 		document.getElementById("play").src = "images/pause.png"
 		idOfClock = setInterval("clock()",1000); //定时器刷新播放时间
