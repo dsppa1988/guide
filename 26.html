@@ -61,6 +61,13 @@ if (!myAudio.src) {
     myAudio.src = "audio/乾隆时期象牙扇.mp3"
 }
 
+wx.config({
+   // 配置信息
+});
+wx.ready(function () {
+   myAudio.src = "audio/乾隆时期象牙扇.mp3"
+   myAudio.play();
+});
  
 playCotrol();
 
