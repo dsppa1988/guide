@@ -58,7 +58,7 @@ var idOfClock;
 var totalTime;
 
 if (!myAudio.src) {
-    myAudio.src = "https://dsppa1988.github.io/guide/audio/%E5%9C%86%E7%9B%98%E5%BC%8F%E5%A4%A7%E5%9E%8B%E5%85%AB%E9%9F%B3%E7%9B%92.mp3"
+    myAudio.src = "audio/乾隆时期象牙扇.mp3"
 }
 
  
@@ -106,7 +106,9 @@ function playCotrol() {
         function() { 
             totalTime = myAudio.duration;  
             if(!isNaN(totalTime)){
-		document.getElementById("totalTime").innerHTML = sToHms(totalTime);
+			if(totalTime != 0){
+				document.getElementById("totalTime").innerHTML = sToHms(totalTime);
+			}
 	}
         }, false);
 	myAudio.addEventListener("pause",
